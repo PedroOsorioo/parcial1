@@ -13,7 +13,7 @@
     </ContentPage.Background>
 
 
-
+    
 
     <VerticalStackLayout>
         <Label 
@@ -30,16 +30,16 @@
                     <ViewCell>
                         <HorizontalStackLayout Spacing="10" Padding="5">
 
-                            <!-- Imagen -->
+                            
                             <Image Source="{Binding Url}"
                            WidthRequest="60"
                            HeightRequest="60"/>
 
-                            <!-- Texto -->
+                            
                             <VerticalStackLayout VerticalOptions="Center">
 
 
-                                <!-- Descripción -->
+                                
                                 <Label Text="{Binding SongN}"
                                        FontSize="16" 
                                        FontAttributes="Bold"
