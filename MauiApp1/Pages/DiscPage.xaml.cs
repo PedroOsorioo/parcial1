@@ -1,11 +1,13 @@
+//Se usarán las clases que se encuentran en la carpeta de nombre "Models"
 using MauiApp1.Models;
 
-
+//Dirección de la clase
 namespace MauiApp1.Pages;
 
+//Se define la clase, la cual puede ser usada desde otras partes del proyecto
 public partial class DiscPage : ContentPage
 {
-
+    //Lista principal de las canciones del artista, en ella se crean para su posterior uso en la ejecución del programa
     private List<DiscModel> _discs = [
 
         new() { Url = "https://i.scdn.co/image/ab67616d0000b2731624590458126fc8b8c64c2f", SongN = "Cruel World" ,Name = "Ultraviolence (deluxe)",Year = "2014" ,Description = "Álbum Ultraviolence en su versión deluxe de la cantante Lana Del Rey" },
@@ -18,12 +20,11 @@ public partial class DiscPage : ContentPage
         new() { Url ="https://static.wikia.nocookie.net/lanadelrey/images/a/a2/Lust_for_Life.jpg/revision/latest?cb=20170428034833&path-prefix=es",SongN = "13 beaches", Name = "Lust For Life", Year = "2017" ,Description = "ÁlbUm Lust For Life de la cantante Lana Del Rey" }
     ];
 
+    //Se filtra la lista
     private List<DiscModel> _filteredDiscs;
 
 
-
-
-
+    //Se crea el constructor haciendo uso de la lista filtrada, se hace uso de la copia original para que se pueda mostrar en la pantalla
     public DiscPage()
 	{
 		InitializeComponent();
@@ -31,6 +32,7 @@ public partial class DiscPage : ContentPage
         discList.ItemsSource = _filteredDiscs;
     }
 
+    //Este método se ejecuta cuando el usuario selecciona una canción de la lista, primero verifica que el elemento seleccionado sea realmente un objeto, si lo es, navega a la página DiscDetailPage y le envía como parámetro el objeto seleccionado para que muestre sus detalles, al final, limpia la selección para que el elemento no quede marcado visualmente después de tocarlo.
     private async void OnContactSelected(object sender, SelectedItemChangedEventArgs e)
     {
 

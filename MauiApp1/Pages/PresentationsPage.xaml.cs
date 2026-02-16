@@ -1,10 +1,14 @@
+
+//Se usarán las clases que se encuentran en la carpeta de nombre "Models"
 using MauiApp1.Models;
 
+//Dirección de la clase
 namespace MauiApp1.Pages;
 
+//Se define la clase, la cual puede ser usada desde otras partes del proyecto
 public partial class PresentationsPage : ContentPage
 {
-
+    //Lista principal de las presentaciones que llevará a cabo el artista, en ella se crean para su posterior uso en la ejecución del programa
     private List<PresentationsModel> _presentations = [
 
         new() { Url = "https://images.trvl-media.com/place/180033/963759af-444a-4d14-b5d1-bf34f97d47cf.jpg?impolicy=fcrop&w=450&h=280&q=medium", Name = "-Concierto en Cozumel-", Description = "Bajo el cielo estrellado del Caribe, Lana Del Rey llega a Cozumel para ofrecer un concierto íntimo y envolvente junto al mar. Su voz melancólica y su estilo cinematográfico se fusionan con la brisa tropical, creando una atmósfera única llena de nostalgia, romance y misterio. El público podrá disfrutar de sus más grandes éxitos y nuevas interpretaciones en un escenario iluminado por luces cálidas y el sonido de las olas, convirtiendo la noche en una experiencia inolvidable para los amantes de la música y los paisajes paradisíacos."},
@@ -18,13 +22,18 @@ public partial class PresentationsPage : ContentPage
 
     ];
 
+    //Se filtra la lista
     private List<PresentationsModel> _filteredPresentations;
+
+    //Se crea el constructor haciendo uso de la lista filtrada, se hace uso de la copia original para que se pueda mostrar en la pantalla
     public PresentationsPage()
 	{
 		InitializeComponent();
         _filteredPresentations = [.. _presentations];
         presentationsList.ItemsSource = _filteredPresentations;
     }
+
+    //Este método se ejecuta cuando el usuario selecciona una presentación de la lista, primero verifica que el elemento seleccionado sea realmente un objeto, si lo es, navega a la página PresentationsDetailPage y le envía como parámetro el objeto seleccionado para que muestre sus detalles, al final, limpia la selección para que el elemento no quede marcado visualmente después de tocarlo.
 
     private async void OnContactSelected(object sender, SelectedItemChangedEventArgs e)
     {
@@ -41,3 +50,4 @@ public partial class PresentationsPage : ContentPage
 
     }
 }
+
