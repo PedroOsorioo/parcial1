@@ -15,28 +15,28 @@
 
     <VerticalStackLayout Margin="20" Spacing="15">
 
-        <!-- Imagen principal -->
+        
         <Image x:Name="urlLabel"
            WidthRequest="180"
            HeightRequest="180"
            Aspect="AspectFill"
            HorizontalOptions="Center" />
 
-        <!-- Nombre -->
+        
         <Label x:Name="nameLabel"
            FontSize="26"
            FontAttributes="Bold"
            HorizontalOptions="Center"
            HorizontalTextAlignment="Center" />
 
-        <!-- Año -->
+        
         <Label x:Name="yearLabel"
            FontSize="18"
            TextColor="Gray"
            HorizontalOptions="Center"
            HorizontalTextAlignment="Center" />
 
-        <!-- Descripción -->
+        
         <Label x:Name="descriptionLabel"
            FontSize="18"
            HorizontalOptions="FillAndExpand"
