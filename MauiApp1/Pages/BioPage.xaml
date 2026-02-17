@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Pages.BioPage"
+             Title="Biografía"
+             BackgroundColor="#1E1E1E">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="25"
+                             Spacing="20">
+
+            <!-- Imagen -->
+            <Frame CornerRadius="20"
+                   HasShadow="True"
+                   Padding="0">
+
+                <Image Source="lana.png"
+                       HeightRequest="220"
+                       Aspect="AspectFill"/>
+            </Frame>
+
+            <!-- Título -->
+            <Label Text="Lana Del Rey"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Biografía"
+                   FontSize="20"
+                   TextColor="#CFAF7C"
+                   HorizontalOptions="Center"/>
+
+            <!-- Separador -->
+            <BoxView HeightRequest="2"
+                     BackgroundColor="#CFAF7C"
+                     HorizontalOptions="Fill"/>
+
+            <!-- Párrafo 1 -->
+            <Label Text="Lana Del Rey, nacida como Elizabeth Woolridge Grant en 1985, es una cantante y compositora estadounidense reconocida por su estilo cinematográfico y nostálgico."
+                   FontSize="16"
+                   TextColor="White"
+                   LineHeight="1.5"/>
+
+            <!-- Párrafo 2 -->
+            <Label Text="Alcanzó fama internacional en 2011 con su sencillo 'Video Games', consolidándose como una de las artistas más influyentes de su generación."
+                   FontSize="16"
+                   TextColor="White"
+                   LineHeight="1.5"/>
+
+            <!-- Párrafo 3 -->
+            <Label Text="A lo largo de su carrera ha recibido múltiples nominaciones y premios, incluyendo reconocimientos en los Grammy y Brit Awards."
+                   FontSize="16"
+                   TextColor="White"
+                   LineHeight="1.5"/>
+
+            <!-- Párrafo 4 -->
+            <Label Text="Su discografía incluye álbumes como 'Born to Die' (2012), 'Ultraviolence' (2014) y 'Norman F***ing Rockwell!' (2019), considerados hitos en la música contemporánea."
+                   FontSize="16"
+                   TextColor="White"
+                   LineHeight="1.5"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

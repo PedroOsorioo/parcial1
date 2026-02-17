@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:MauiApp1.Pages"
+            x:Class="MauiApp1.Pages.MainPage">
+
+    <!-- INICIO -->
+    <NavigationPage Title="Inicio">
+
+        <x:Arguments>
+
+            <ContentPage Title="Inicio">
+
+                <VerticalStackLayout Padding="50,0"
+                                     Spacing="25"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center">
+
+                    <Label Text="Bienvenido al sitio oficial de"
+                           SemanticProperties.HeadingLevel="Level5"
+                           HorizontalOptions="Center"/>
+
+                    <!-- Título principal -->
+                    <Label Text="Lana Del Rey"
+                           FontSize="32"
+                           SemanticProperties.HeadingLevel="Level2"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"/>
+
+                    <!-- Imagen -->
+                    <Image Source="ldr.png"
+                           Aspect="AspectFit"
+                           HeightRequest="250"
+                           WidthRequest="250"
+                           HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+
+            </ContentPage>
+
+        </x:Arguments>
+
+    </NavigationPage>
+
+    <!--  BIOGRAFÍA  -->
+    <NavigationPage Title="Biografía">
+
+        <x:Arguments>
+            <local:BioPage/>
+        </x:Arguments>
+
+    </NavigationPage>
+
+</TabbedPage>
