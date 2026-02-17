@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Pages.DiscDetailPage"
+             Title="DiscDetailPage">
+
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="Blue" Offset="0.0"/>
+            <GradientStop Color="Red" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
+    <VerticalStackLayout Margin="20" Spacing="15">
+
+        <!-- Imagen principal -->
+        <Image x:Name="urlLabel"
+           WidthRequest="180"
+           HeightRequest="180"
+           Aspect="AspectFill"
+           HorizontalOptions="Center" />
+
+        <!-- Nombre -->
+        <Label x:Name="nameLabel"
+           FontSize="26"
+           FontAttributes="Bold"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center" />
+
+        <!-- Año -->
+        <Label x:Name="yearLabel"
+           FontSize="18"
+           TextColor="Gray"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center" />
+
+        <!-- Descripción -->
+        <Label x:Name="descriptionLabel"
+           FontSize="18"
+           HorizontalOptions="FillAndExpand"
+           HorizontalTextAlignment="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

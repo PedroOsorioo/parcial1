@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Pages.PresentationsDetailPage"
+             Title="PresentationsDetailPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="DeepPink" Offset="0.0"/>
+            <GradientStop Color="ForestGreen" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
+    <VerticalStackLayout Margin="20" Spacing="15">
+
+        
+        <Image x:Name="urlLabel"
+       WidthRequest="180"
+       HeightRequest="180"
+       Aspect="AspectFill"
+       HorizontalOptions="Center" />
+
+       
+        <Label x:Name="nameLabel"
+       FontSize="26"
+       FontAttributes="Bold"
+       HorizontalOptions="Center"
+       HorizontalTextAlignment="Center" />
+
+        
+        <Label x:Name="descriptionLabel"
+       FontSize="18"
+       HorizontalOptions="Center"
+       HorizontalTextAlignment="Center" />
+
+        <Button Text="Reservar"
+        HorizontalOptions="Center"
+        Clicked="OnAddContactClicked"/>
+
+
+    </VerticalStackLayout>
+
+    
+
+</ContentPage>
