@@ -6,7 +6,7 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="Yellow" Offset="0.0"/>
+            <GradientStop Color="LightCoral" Offset="0.0"/>
             <GradientStop Color="BlueViolet" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
@@ -18,14 +18,11 @@
 
 
             <Label Text="Lana Del Rey"
-               FontSize="32"
-               FontAttributes="Bold"
-               TextColor="White"
+               Style="{StaticResource Title}"
                HorizontalOptions="Center"/>
 
             <Label Text="Biografía"
-               FontSize="20"
-               TextColor="White"
+               Style="{StaticResource Subtitle}"
                HorizontalOptions="Center"/>
 
             
@@ -36,25 +33,25 @@
 
             <Label Text="Lana Del Rey nació el 21 de junio de 1985 en Nueva York bajo el nombre de Elizabeth Woolridge Grant. Creció en Lake Placid, un pequeño pueblo del estado de Nueva York, en un entorno relativamente tradicional. Desde muy joven mostró interés por la música, la poesía y el cine, elementos que más tarde definirían su estética artística."
                FontSize="16"
-               TextColor="White"
+               TextColor="{DynamicResource ColorBase}"
                LineHeight="1.5"/>
 
 
             <Label Text="Durante su adolescencia enfrentó problemas relacionados con el alcohol, experiencia que ella misma ha reconocido como un punto crucial en su vida personal y creativa. A los 14 años fue enviada a un internado para tratar su adicción, lo que marcó profundamente su visión del mundo y se reflejaría más adelante en sus letras cargadas de melancolía, culpa, deseo y redención."
                FontSize="16"
-               TextColor="White"
+               TextColor="{DynamicResource ColorBase}"
                LineHeight="1.5"/>
 
 
             <Label Text="Su gran salto llegó en 2011 con el lanzamiento del sencillo “Video Games”, una balada melancólica acompañada de un videoclip casero que se volvió viral. La canción llamó la atención por su tono confesional y su estética cinematográfica, muy distinta al pop dominante de la época."
                FontSize="16"
-               TextColor="White"
+               TextColor="{DynamicResource ColorBase}"
                LineHeight="1.5"/>
 
 
             <Label Text="En 2012 publicó su álbum debut comercial, Born to Die, que incluía canciones como “Summertime Sadness” y “Blue Jeans”. Aunque recibió críticas mixtas, fue un enorme éxito comercial y la consolidó como una figura central del pop alternativo. Su imagen de femme fatale triste y romántica cautivó a millones de seguidores en todo el mundo."
                FontSize="16"
-               TextColor="White"
+               TextColor="{DynamicResource ColorBase}"
                LineHeight="1.5"/>
 
         </VerticalStackLayout>

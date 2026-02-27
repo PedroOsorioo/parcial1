@@ -23,14 +23,14 @@
 
        
         <Label x:Name="nameLabel"
-       FontSize="26"
-       FontAttributes="Bold"
+       Style="{StaticResource Subtitle}"
        HorizontalOptions="Center"
        HorizontalTextAlignment="Center" />
 
         
         <Label x:Name="descriptionLabel"
        FontSize="18"
+       TextColor="{DynamicResource ColorBase}"
        HorizontalOptions="Center"
        HorizontalTextAlignment="Center" />
 

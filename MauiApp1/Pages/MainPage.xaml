@@ -33,7 +33,7 @@
                 <Label
                 Text="Bienvenido al sitio oficial de"
                 HorizontalOptions="Center"
-                Style="{StaticResource Pene}"
+                Style="{StaticResource Title}"
  
                 VerticalOptions="Center"/>
 
@@ -47,8 +47,7 @@
 
                 <Label
                 Text="Lana Del Rey"
-                FontSize="32"
-                FontAttributes="Bold"
+                Style="{StaticResource Title}"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"/>
 

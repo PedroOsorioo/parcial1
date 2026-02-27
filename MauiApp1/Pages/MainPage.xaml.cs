@@ -15,13 +15,13 @@
 {
                 Shell.Current.Resources["BackgroundMain"] = Color.FromHex("#800080");
                 Shell.Current.Resources["BackgroundSecond"] = Color.FromHex("#FF0000");
-
+                Shell.Current.Resources["ColorBase"] = Colors.Yellow;
                 return;
             }
 
             Shell.Current.Resources["BackgroundMain"] = Color.FromHex("#FF0000");
             Shell.Current.Resources["BackgroundSecond"] = Color.FromHex("#FFC0CB");
-
+            Shell.Current.Resources["ColorBase"] = Colors.Black;
             return;
         }
     }

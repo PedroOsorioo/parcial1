@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                    x:Class="MauiApp1.Resources.Styles.MyResurceDictionary">
+                    >
     <!-- Colores -->
-    <Color x:Key="PrimaryColor">#00d2ff</Color>
+    <Color x:Key="ColorBase">aqua</Color>
     <Color x:Key="BackgroundMain">blue</Color>
     <Color x:Key="BackgroundSecond">Yellow</Color>
 
     <!-- Tamaños -->
     <x:Double x:Key="TitleSize">32</x:Double>
-    <x:Double x:Key="AlbumTitleSize">18</x:Double>
+    <x:Double x:Key="SubtitleSize">18</x:Double>
+    <x:Double x:Key="DiscSize">16</x:Double>
 
     <!-- Estilo reutilizable -->
-    <Style x:Key="Pene"
+    <Style x:Key="Title"
                TargetType="Label">
         <Setter Property="TextColor"
-                    Value="Yellow" />
+                    Value="White" />
         <Setter Property="FontSize"
                     Value="{StaticResource TitleSize}" />
         <Setter Property="FontAttributes"
@@ -25,5 +26,35 @@
         <Setter Property="LineBreakMode"
                     Value="TailTruncation" />
     </Style>
+
+    <Style x:Key="Subtitle"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="Cyan" />
+        <Setter Property="FontSize"
+                Value="{StaticResource SubtitleSize}" />
+        <Setter Property="FontAttributes"
+                Value="Bold" />
+        <Setter Property="MaxLines"
+                Value="1" />
+        <Setter Property="LineBreakMode"
+                Value="TailTruncation" />
+    </Style>
+
+    <Style x:Key="Disc"
+       TargetType="Label">
+        <Setter Property="TextColor"
+            Value="Gold" />
+        <Setter Property="FontSize"
+            Value="{StaticResource DiscSize}" />
+        <Setter Property="FontAttributes"
+            Value="Bold" />
+        <Setter Property="MaxLines"
+            Value="1" />
+        <Setter Property="LineBreakMode"
+            Value="TailTruncation" />
+    </Style>
+
+    
 
 </ResourceDictionary>
