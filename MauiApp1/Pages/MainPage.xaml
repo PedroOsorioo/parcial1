@@ -5,12 +5,16 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="Orange" Offset="0.0"/>
-            <GradientStop Color="Aqua" Offset="1.0"/>
+            <GradientStop Color="{DynamicResource BackgroundMain}" Offset="0.0"/>
+            <GradientStop Color="{DynamicResource BackgroundSecond}" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
 
+
+
     <ScrollView>
+        
+        
        
 
         <Grid>
@@ -20,11 +24,17 @@
             VerticalOptions="Center"
             HorizontalOptions="Center">
 
+                <Switch Grid.Row="0"
+                HorizontalOptions="End"
+                OnColor="#00d2ff"
+                Toggled="OnToggledChanged"
+                VerticalOptions="End" />
+
                 <Label
                 Text="Bienvenido al sitio oficial de"
                 HorizontalOptions="Center"
-                FontSize="32"
-                FontAttributes="Bold"
+                Style="{StaticResource Pene}"
+ 
                 VerticalOptions="Center"/>
 
                 <Image

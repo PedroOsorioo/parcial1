@@ -9,6 +9,20 @@
             InitializeComponent();
         }
 
-        
+        private void OnToggledChanged(object sender, ToggledEventArgs e)
+        {
+            if(e.Value)
+{
+                Shell.Current.Resources["BackgroundMain"] = Color.FromHex("#800080");
+                Shell.Current.Resources["BackgroundSecond"] = Color.FromHex("#FF0000");
+
+                return;
+            }
+
+            Shell.Current.Resources["BackgroundMain"] = Color.FromHex("#FF0000");
+            Shell.Current.Resources["BackgroundSecond"] = Color.FromHex("#FFC0CB");
+
+            return;
+        }
     }
 }

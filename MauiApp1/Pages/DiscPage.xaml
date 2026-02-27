@@ -7,8 +7,8 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="Orange" Offset="0.0"/>
-            <GradientStop Color="Aqua" Offset="1.0"/>
+            <GradientStop Color="{DynamicResource BackgroundMain}" Offset="0.0"/>
+            <GradientStop Color="{DynamicResource BackgroundSecond}" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
 
